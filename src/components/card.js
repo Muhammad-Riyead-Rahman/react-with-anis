@@ -1,8 +1,4 @@
-// import React from 'react';
-import ReactDOM from "react-dom/client";
-import App from "./App.js";
-
-/* const todoTitte = "Call Family";
+const todoTitte = "Call Family";
 const todoDesc = "Lorem, ipsum dolor sit amet consectetur adipisicing elit";
 const date = new Date();
 const dateName = date.getDate();
@@ -19,7 +15,6 @@ function Card() {
       </p>
     </div>
   );
-} */
+}
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<App />);
+export default Card;
