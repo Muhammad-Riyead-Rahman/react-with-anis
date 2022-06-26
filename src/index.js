@@ -13,8 +13,12 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <div>
     <h1 className='headingStyle largeText'>Todo App</h1>
-    <h3>{todoTitte}</h3>
-    <p>{todoDesc}</p>
-    <p>{dateName + "/" + monthName + "/" + currentYear}</p>
+    <div className='card'>
+      <h3 className='cardTitle'>{todoTitte}</h3>
+      <p className='cardDesc'>{todoDesc}</p>
+      <p className='cardFooter'>
+        {dateName + "/" + monthName + "/" + currentYear}
+      </p>
+    </div>
   </div>
 );
