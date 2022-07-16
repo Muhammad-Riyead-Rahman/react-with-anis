@@ -1,14 +1,21 @@
-import Card from "./components/card";
-import "./index.css";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from './pages/Home';
+import Blogs from './pages/Blogs';
+import Contact from './pages/Contact';
+import Error from './pages/Error';
+
 
 function App() {
-  return <div>
-    <h1 className='headingStyle largeText'>Todo App</h1>
-    <Card />
-    <Card />
-    <Card />
-    <Card />
-  </div>
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/home" element={<Home />} />
+        <Route path="/blogs" element={<Blogs />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="*" element={<Error />} />
+      </Routes>
+    </BrowserRouter>
+  )
 }
 
 export default App;
