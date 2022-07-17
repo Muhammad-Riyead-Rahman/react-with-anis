@@ -57,7 +57,7 @@ function App() {
 
   items = data.map((item, index) => <Card key={index} titleText={item.title} descText={item.desc} />)
 
-  return <div>
+  return (<div>
     <h1 className='headingStyle largeText'>Todo App</h1>
 
 
@@ -69,22 +69,23 @@ function App() {
     {items}
 
     {todos.map((todo) => {
-      const { id, title, desc, phones } = todo;
+      const { id, title, desc } = todo;
       return (
         <div key={id}>
           <h3>{title}</h3>
           <p>{desc}</p>
-          {todo.phones.map((phone) => (
-              <div>
+          {todo.phones.map((phone, index) => (
+              <div key={index}>
                 <p>Home: { phone.home }</p>
                 <p>office: { phone.office }</p>
               </div>
             ))
           }
       </div>
-    )})}
+      )
+    })}
     
-  </div>
+  </div>)
 }
 
 export default App;
