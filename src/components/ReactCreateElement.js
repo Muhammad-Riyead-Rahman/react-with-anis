@@ -2,7 +2,7 @@ import React from 'react'
 
 /* without importing to app.js */
 
-/* simple function creation scenario */
+/* // simple function creation scenario
 function Todo() {
   return (
     <div>
@@ -10,7 +10,7 @@ function Todo() {
       <p>Todo desc</p>
     </div>
   )
-}
+} */
 
 /* creating react function under the hood */
 const ReactCreateElement = () => {
