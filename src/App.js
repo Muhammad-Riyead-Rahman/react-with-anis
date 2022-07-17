@@ -8,22 +8,38 @@ const todos = [
   {
     id: uuidv4(),
     title: "todo1",
-    desc: "todo1 description"
+    desc: "todo1 description",
+    phones: [
+      { home: "0172564552" },
+      { office: "2555558525" }
+    ]
   },
   {
     id: uuidv4(),
     title: "todo2",
-    desc: "todo1 description"
+    desc: "todo1 description",
+    phones: [
+      { home: "0172564552" },
+      { office: "2555558525" }
+    ]
   },
   {
     id: uuidv4(),
     title: "todo3",
-    desc: "todo1 description"
+    desc: "todo1 description",
+    phones: [
+      { home: "0172564552" },
+      { office: "2555558525" }
+    ]
   },
   {
     id: uuidv4(),
     title: "todo4",
-    desc: "todo1 description"
+    desc: "todo1 description",
+    phones: [
+      { home: "0172564552" },
+      { office: "2555558525" }
+    ]
   }
 ]
 
@@ -53,11 +69,18 @@ function App() {
     {items}
 
     {todos.map((todo) => {
-      const { id, title, desc } = todo;
+      const { id, title, desc, phones } = todo;
       return (
         <div key={id}>
           <h3>{title}</h3>
           <p>{desc}</p>
+          {todo.phones.map((phone) => (
+              <div>
+                <p>Home: { phone.home }</p>
+                <p>office: { phone.office }</p>
+              </div>
+            ))
+          }
       </div>
     )})}
     
