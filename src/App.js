@@ -1,6 +1,31 @@
+import { v4 as uuidv4 } from 'uuid';
 import Card from "./components/card";
-import "./index.css";
 import data from "./data.json";
+import "./index.css";
+
+
+const todos = [
+  {
+    id: uuidv4(),
+    title: "todo1",
+    desc: "todo1 description"
+  },
+  {
+    id: uuidv4(),
+    title: "todo2",
+    desc: "todo1 description"
+  },
+  {
+    id: uuidv4(),
+    title: "todo3",
+    desc: "todo1 description"
+  },
+  {
+    id: uuidv4(),
+    title: "todo4",
+    desc: "todo1 description"
+  }
+]
 
 
 function App() {
@@ -26,6 +51,15 @@ function App() {
     <Card titleText={data[3].title} descText={data[3].desc} /> */}
 
     {items}
+
+    {todos.map((todo) => {
+      const { id, title, desc } = todo;
+      return (
+        <div key={id}>
+          <h3>{title}</h3>
+          <p>{desc}</p>
+      </div>
+    )})}
     
   </div>
 }
