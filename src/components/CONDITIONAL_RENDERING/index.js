@@ -24,9 +24,9 @@ class CONDITIONAL_RENDERING extends Component {
         /** conditional rending based on if-else */
         /*
             if(isLoggedIn){
-            return <HomePage />
+              return <HomePage />
             }else{
-                return <SignUpPage />
+              return <SignUpPage />
             }
         */
         
@@ -36,13 +36,13 @@ class CONDITIONAL_RENDERING extends Component {
         //element variable rendering
        /*
             if(isLoggedIn){
-            element =  <HomePage />
-        }else{
-            element =  <SignUpPage />
+              element =  <HomePage />
+            }else{
+              element =  <SignUpPage />
         }
         return (
             <div>
-                {element}
+              {element}
             </div>
         )
        */
