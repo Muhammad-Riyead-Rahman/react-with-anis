@@ -7,6 +7,15 @@ export default function BookList() {
 
   const { bookName, bookPrice } = book;
 
+  
+
+  const handleChange = (e) => {
+    setBook({ ...book, [e.target.name]: e.target.value });
+    // console.log(e.target.value);
+  };
+
+
+
   const addBook = () => {
     setBookList([
       ...bookList,
@@ -17,11 +26,6 @@ export default function BookList() {
       },
     ]);
     // console.log(bookList);
-  };
-
-  const handleChange = (e) => {
-    setBook({ ...book, [e.target.name]: e.target.value });
-    // console.log(e.target.value);
   };
 
   return (
@@ -52,11 +56,11 @@ export default function BookList() {
         Add Book
       </button>
       <ul>
-        {bookList.map((item, index) => (
+        {bookList.map((book, index) => (
           //   console.log(item)
-          <li
-            key={index}
-          >{`Id: ${item.id}, Name: ${item.name}, Price: ${item.price}`}</li>
+          <li key={index}>
+            {`Id: ${book.id}, Name: ${book.name}, Price: ${book.price}`}
+          </li>
         ))}
       </ul>
     </div>
