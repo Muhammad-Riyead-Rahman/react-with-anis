@@ -1,9 +1,9 @@
-import BINDING_EVENT_HANDLER from './components/BINDING_EVENT_HANDLER'
+import EVENT_HANDLING_CLASS from './components/EVENT_HANDLING_CLASS';
 
 function App() {
   return (
     <div>
-      <BINDING_EVENT_HANDLER />
+      <EVENT_HANDLING_CLASS />
     </div>
     )
 }

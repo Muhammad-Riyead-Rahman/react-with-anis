@@ -6,16 +6,19 @@ import React from 'react'
 function Todo() {
   return (
     <div>
-      <p>Todo title</p>
-      <p>Todo desc</p>
+      <p>todo title</p>
+      <p>todo desc</p>
     </div>
   )
 } */
 
 /* creating react function under the hood */
 const ReactCreateElement = () => {
-  return React.createElement("div", {}, React.createElement("p", {}, "Todo title"),
-  React.createElement("p", {}, "Todo desc"))
+  return (
+    React.createElement("div", {},
+      React.createElement("p", {}, "Todo title"),
+      React.createElement("p", {}, "Todo desc"))
+  )
 }
 
 export default ReactCreateElement
