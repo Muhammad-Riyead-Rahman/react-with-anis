@@ -1,10 +1,9 @@
-import ReactBootstrap from "./components/ReactBootstrap";
-import "./index.css";
+import CONDITIONAL_RENDERING from './components/CONDITIONAL_RENDERING/index';
 
 function App() {
   return (
     <div>
-      <ReactBootstrap />
+      <CONDITIONAL_RENDERING />
     </div>
     )
 }
