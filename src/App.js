@@ -2,6 +2,7 @@ import Card from "./components/card";
 import "./index.css";
 import data from "./data.json";
 
+
 function App() {
 
   console.log(data[0].title);
