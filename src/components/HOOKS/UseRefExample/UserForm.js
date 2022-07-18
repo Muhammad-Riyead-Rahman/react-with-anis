@@ -24,6 +24,6 @@ const UserForm = () => {
       <button type="submit">Register</button>
     </form>
   );
-};``
+};
 
 export default UserForm;
