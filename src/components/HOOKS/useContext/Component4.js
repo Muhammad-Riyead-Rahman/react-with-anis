@@ -1,5 +1,7 @@
 import React, { useContext } from "react";
 import { UserContext } from "./UserContext";
+
+
 const Component4 = () => {
   const { user, text } = useContext(UserContext);
 
