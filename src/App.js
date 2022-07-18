@@ -1,9 +1,11 @@
-import UserForm from "./components/HOOKS/UseRefExample/UserForm"
+import UseEffectExample from "./components/HOOKS/useEffect/UseEffectExample";
+import DataFetch from "./components/HOOKS/useEffect/DataFetch";
 
 function App() {
   return (
     <div>
-      <UserForm />
+      <UseEffectExample />
+      <DataFetch />
     </div>
     )
 }

@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
-const useEffectExample = () => {
+const UseEffectExample = () => {
   const [count, setCount] = useState(0);
   const [isLoading, setIsLoading] = useState(false);
 
@@ -31,4 +31,4 @@ const useEffectExample = () => {
   );
 };
 
-export default useEffectExample;
+export default UseEffectExample;
