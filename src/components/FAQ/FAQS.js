@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import style from "./faqs.module.css";
 import { faqsData } from "./data";
 import FAQ from "./FAQ";
+
 const FAQS = () => {
   const [faqs, setFaqs] = useState(faqsData);
 

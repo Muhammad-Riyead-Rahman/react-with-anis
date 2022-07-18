@@ -1,9 +1,9 @@
-import DataFetch from "./components/HOOKS/CustomHooks/DataFetch";
+import FAQS from "./components/FAQ/FAQS"
 
 function App() {
   return (
     <div>
-      <DataFetch />
+      <FAQS />
     </div> 
     )
 }
