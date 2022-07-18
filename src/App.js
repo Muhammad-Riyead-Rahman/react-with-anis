@@ -1,12 +1,10 @@
-import UseEffectExample from "./components/HOOKS/useEffect/UseEffectExample";
-import DataFetch from "./components/HOOKS/useEffect/DataFetch";
+import DataFetch from "./components/HOOKS/CustomHooks/DataFetch";
 
 function App() {
   return (
     <div>
-      <UseEffectExample />
       <DataFetch />
-    </div>
+    </div> 
     )
 }
 
